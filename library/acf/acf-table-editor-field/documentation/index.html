@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>ACF Table Editor Field Plugin Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+
+		<h3 class="center alt">&ldquo;ACF Table Editor Field&rdquo; Documentation by &ldquo;polevaultweb&rdquo; v0.1</h3>
+
+		<hr>
+
+		<h1 class="center">&ldquo;ACF Table Editor Field&rdquo;</h1>
+
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 8 Dec 2013<br>
+					By: polevaultweb<br>
+					Email: <a href="mailto:support@polevaultweb.com">support@polevaultweb.com</a>
+					Support: <a href="http://support.polevaultweb.com/">Support Forum</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->
+
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing this plugin. If you have any questions that are beyond the scope of this help file, please feel free to post on the <a href="http://support.polevaultweb.com/">support forum</a> </p>
+			</div>
+		</div><!-- end div .borderTop -->
+
+		<hr>
+
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#description">Description</a></li>
+			<li><a href="#requirements">Requirements</a></li>
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#config">Configuration</a></li>
+			<li><a href="#support">Support</a></li>
+		</ol>
+
+		<hr>
+		<h3 id="description"><strong>A) Description</strong> - <a href="#toc">top</a></h3>
+		<p>This plugin adds a new ACF field that creates an Excel like grid table that can be populated by admin users. The data can then be rendered as an HTML table on the frontend of your site.</p>
+
+		<p>This plugin requires the free plugin <a href="http://wordpress.org/plugins/advanced-custom-fields/">Advanced Custom Fields</a>
+
+		<hr>
+
+
+		<h3 id="requirements"><strong>B) Requirements</strong> - <a href="#toc">top</a></h3>
+		<p>Before we go ahead and install the plugin you need to make sure your WordPress install will be able to handle the plugin. You need to have at least the following running on your server:</p>
+
+		<ul>
+            <li>WordPress v3.0+</li>
+            <li>Advanced Custom Fields v4.0+</li>
+        </ul>
+
+		<p>If you don’t have these or you don’t know what these are, it’s worth getting in touch with your hosting provider just to check.</p>
+
+		<hr>
+
+		<h3 id="installation"><strong>C) Installation</strong> - <a href="#toc">top</a></h3>
+
+		<p>Once you have purchased your copy of the ACF Table Editor Field and downloaded it to your computer you will need to follow these steps to install the plugin in WordPress:</p>
+
+		<ol>
+            <li>Log in to your WordPress admin backend.</li>
+            <li>Go to the&nbsp;<strong>Plugins &gt; Add New</strong>&nbsp;page.</li>
+            <li>Click on the&nbsp;<strong>Upload</strong>&nbsp;tab.</li>
+            <li>On this page click the&nbsp;<em>Choose File</em>&nbsp;button choose the ACF Table Editor Field zip file that you previously downloaded.</li>
+            <li>Click the&nbsp;<em>Install Now</em>&nbsp;button and the plugin will be installed.</li>
+            <li>You should now see a&nbsp;<strong>ACF Table Editor Field</strong>&nbsp;plugin in your list of plugins. Click&nbsp;<em>Activate</em>.&nbsp;</li>
+             <li>You should now see a Table Editor field in the ACF field group area.</li>
+        </ol>
+
+		<hr>
+
+		<h3 id="config"><strong>D) Configuration</strong> - <a href="#toc">top</a></h3>
+		<p>
+		<strong>Creating a table editor field</strong>
+		</p>
+		<ol>
+            <li>Navigate to the&nbsp;<strong>Custom Fields</strong>&nbsp;menu in your dashboard</li>
+            <li>Click&nbsp;<strong>Custom Fields</strong>&nbsp;</li>
+            <li>Edit an existing Field Group or add a new one</li>
+            <li>Add a new Field in the group</li>
+            <li>You should now see a new Field Type under 'Content' of&nbsp;<strong>Table Editor</strong>&nbsp;</li>
+            <li>Fill out the usual field details like label, instructions and required</li>
+            <li>Set the number of columns the table will have</li>
+            <li>Set the column headers.<stong>Simple - </stong>headers are A,B,C,D etc. <strong>Custom - </strong>you can set the header names below.<strong>None - </strong>is for now header</li>
+            <li>If you have selected custom headers, enter the names for each column in the text area. A column name on a new line.</li>
+            <li>Set how many empty rows there will be at the bottom of the table. (These empty rows will not be rendered but showing one empty row can be helpful to users) </li>
+            <li>Set if the row numbers will be shown on the table. (These will not be rendered).</li>
+            <li>Set if the table will fill the width of the metabox</li>
+            <li>Set if users can use drag down functionality on cells for easy copying</li>
+            <li>Update the field group</li>
+        </ol>
+        <p>
+        <strong>Populating the table</strong>
+        </p>
+		<ol>
+            <li>Edit your post, page or custom post type that you have set the ACF field group, with the <strong>Table Editor</strong> field in, to appear on</li>
+            <li>You will see the table appear like an Excel sheet. Start populating data</li>
+            <li>You can add new rows, remove rows and undo and redo text changes</li>
+            <li>Once finished publish/update the post, page or custom post type</li>
+        </ol>
+        <strong>Displaying the table</strong>
+        </p>
+		<ol>
+            <li>To render your table in your template use <a href="http://www.advancedcustomfields.com/resources/functions/get_field/">get_field()</a>. The table is rendered as a normal HTML table element and the styling of the table is controlled by your theme not the plugin.</li>
+		</ol>
+
+		<hr>
+
+		<h3 id="support"><strong>E) Support</strong> - <a href="#toc">top</a></h3>
+
+		<p>If you want support you can submit a ticket on the correct discussion forum at the <a href="http://support.polevaultweb.com">Support Forum.</a></p>
+
+		<p class="append-bottom alt large"><strong>polevaultweb</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

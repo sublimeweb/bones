@@ -1,0 +1,11 @@
+/*
+*  Table Editor Style
+*
+*  @description:
+*  @since: 1.0
+*  @created: 29/11/13
+*/
+
+.htContextMenu {
+    z-index: 9999;
+}
